@@ -1,0 +1,6 @@
+file(GLOB SOURCES "*.c")
+file(GLOB HEADERS "*.h")
+add_library(c8 ${SOURCES})
+target_link_libraries(c8 log)
+install(TARGETS c8 DESTINATION lib)
+install(FILES ${HEADERS} DESTINATION include)

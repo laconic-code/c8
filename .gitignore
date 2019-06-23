@@ -5,3 +5,5 @@ resources/*
 .settings/*
 .cproject
 .project
+build/*
+

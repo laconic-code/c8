@@ -1,0 +1,5 @@
+file(GLOB SOURCES "*.c")
+file(GLOB HEADERS "*.h")
+add_library(log ${SOURCES})
+install(TARGETS log DESTINATION lib)
+install(FILES ${HEADERS} DESTINATION include)
